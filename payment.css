@@ -1,0 +1,60 @@
+.payment-container {
+  max-width: 400px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  
+}
+
+.payment-ui {
+  --payment-ui-color-primary: #16347B;
+  --payment-ui-color-text-primary: #454545;
+  --payment-ui-color-text-secondary: #999999;
+  
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--payment-ui-color-text-secondary);
+}
+
+.payment-ui--item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: .2s ease;
+  border: 1px solid transparent;
+  margin: 2px 0;
+}
+
+.payment-ui--item-content {
+  flex-grow: 1;
+}
+
+.payment-ui--item:hover,
+.payment-ui--item:focus {
+  background-color: rgba(0,0, 0, .05);
+  border: 1px solid rgba(0,0,0, .08);
+}
+
+.payment-ui--item:active {
+  background-color: rgba(0, 0, 0, .1);
+  border: 1px solid rgba(0, 0, 0, .12);
+
+}
+
+.payment-ui--item-title {
+  color: var(--payment-ui-color-text-primary);
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.payment-ui--item-subtitle {
+  margin-top: 4px;
+  font-size: 14px;
+}
+
+.payment-ui--logo {
+  margin-right: 14px;
+  display: grid;
+  place-items: center;
+}
